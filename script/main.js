@@ -1,4 +1,4 @@
-var menu = ['HOME', 'PROJECT 01', 'PROJECT 02', 'ABOUT', 'CONTACT'];
+var menu = ['HOME', 'PROJECT 01', 'PROJECT 02', 'CONTACT'];
 var swiper = new Swiper(".mySwiper", {
     direction: "horizontal",
     slidesPerView: 1,
