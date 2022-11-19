@@ -380,7 +380,3 @@ body {
     transform: translatex(-10vw) scale(0.3);
   }
 }
-
-video {
-  width: 100%;
-}
