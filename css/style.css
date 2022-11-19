@@ -25,7 +25,7 @@ html {
 body {
   color: #000;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(to top, transparent, #d4fcfe, #cefdff) fixed;
+  background: linear-gradient(to top, transparent, #d4fcfe, #bcfdff) fixed;
 }
 
 .inner {
@@ -197,9 +197,10 @@ body {
   backdrop-filter: hue-rotate(45deg);
   -webkit-backdrop-filter: hue-rotate(45deg);
   background: linear-gradient(to right top, rgb(0, 0, 0, .6), rgb(0, 0, 0, .5), rgb(0, 0, 0, .3));
-  box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), 
-              inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6), 
-              inset 0px 11px 28px 0px rgb(255, 255, 255, 0.7);}
+  box-shadow: 2px 2px 34px 0px rgba(145, 192, 255, 0.5), 
+              inset -8px -8px 16px 0px rgba(109, 157, 219, 0.6), 
+              inset 0px 11px 28px 0px rgba(167, 167, 167, 0.5);
+            }
 
 .left>* {
   margin-bottom: 30px;
@@ -273,7 +274,9 @@ body {
   -webkit-backdrop-filter: hue-rotate(10deg);
   backdrop-filter: hue-rotate(10deg);
   background: linear-gradient(to right top, rgba(165, 216, 130, .8), rgb(165, 216, 130, .55));
-  box-shadow: 0 2px 32px rgba(49, 54, 136, 0.27);
+  box-shadow: 2px 2px 34px 0px rgba(145, 192, 255, 0.5), 
+  inset -8px -8px 16px 0px rgba(93, 163, 255, 0.3), 
+  inset 0px 5px 28px 0px rgb(255, 255, 255, 0.1);  
   border: 1px solid rgb(165, 216, 130.8);
 }
 
@@ -304,8 +307,9 @@ body {
   -webkit-backdrop-filter: hue-rotate(45deg);
   backdrop-filter: hue-rotate(45deg);
   background: linear-gradient(to left top, rgb(30, 144, 255, .7), rgb(30, 144, 255, .5));
-  box-shadow: 0 2px 32px rgba(31, 38, 135, 0.27);
-  border: 1px solid rgb(30, 144, 255, .3);
+  box-shadow: 2px 2px 34px 0px rgba(145, 192, 255, 0.5), 
+  inset -8px -8px 16px 0px rgba(93, 163, 255, 0.3), 
+  inset 0px 5px 28px 0px rgb(255, 255, 255, 0.1);  
 }
 
 .link>a {
@@ -315,68 +319,69 @@ body {
 
 #work2 .left {
   text-align: left;
-  padding: 50px 100px;
+  padding: 40px 100px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background: none;
-  box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
-}
-
-#work2 .right {
-  outline: 1px solid black;
-  padding-right: 80px;
+  box-shadow: 0 0 34px 0px rgba(58, 71, 88, 0.5), 
+              inset -8px -8px 16px 0px rgba(109, 157, 219, 0.1), 
+              inset 0px 11px 28px 0px rgba(167, 167, 167, 0.1);
 }
 
 #work2 h2,
 #work2 p {
-  color: rgb(0, 0, 0, .7);
+  color: #000;
 }
 
-#work2>span {
-  width: 50px;
-  height: 3px;
-  border-radius: 50%;
+#work2 .link {
+  background: linear-gradient(to right top, rgba(165, 216, 130, .8), rgb(165, 216, 130, .55));
+}
+
+#work2 .ex {
+  background: linear-gradient(to left top, rgb(30, 144, 255, .7), rgb(30, 144, 255, .5));
+  border: none;
+}
+
+#work2 .ex > * {
+  color: #fff;
+}
+
+
+
+#contact {
+  position: relative;
+  background: transparent;
+}
+
+#contact:before {
+  content: '';
+  background: linear-gradient(to top, #000, rgb(0, 0, 0, .7)) fixed;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  animation: rain 15s linear infinite;
-  width: 100px;
-  height: 1px;
 }
 
-.s1 {
-  background: dodgerblue;
-  border-radius: 50%;
-  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
-  filter: blur(10px);
-  top: 40px;
+.textbox {
+  position: absolute;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  top: 20%;
+  text-shadow: 0 0 30px  rgba(145, 192, 255, 0.3);
 }
 
-.s2 {
-  background: dodgerblue;
-  border-radius: 50%;
-  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
-  filter: blur(10px);
-  top: 120px;
+.textbox h1 {
+  font-size: 7rem;
+  margin-bottom: 20px;
 }
 
-.s3 {
-  background: dodgerblue;
-  border-radius: 50%;
-  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
-  filter: blur(10px);
-  top: 200px;
+.textbox h2 {
+  font-size: 4rem;
 }
 
-@keyframes rain {
-  0% {
-    transform: translatex(100vw) scale(0.3);
-  }
-
-  50% {
-    transform: translatex(50vw) scale(0.6);
-  }
-
-  100% {
-    transform: translatex(-10vw) scale(0.3);
-  }
+.textbox p {
+  font-size: 6rem;
+  font-weight: 700;
 }
