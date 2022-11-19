@@ -318,7 +318,7 @@ body {
 
 #work2 .left {
   text-align: left;
-  padding: 40px 100px;
+  padding: 30px 100px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -330,11 +330,7 @@ body {
 
 #work2 h2,
 #work2 p {
-  color: #000;
-}
-
-#work2 .left > img {
-  width: 500px;
+  color: rgb(0, 0, 0, .8);
 }
 
 #work2 .link {
@@ -352,6 +348,23 @@ body {
 
 #work2 .c03 {
   background: #f3f4f8;
+}
+
+#work2 .ex,
+#work2 .link {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 16px 0px rgba(58, 71, 88, 0.5), 
+              inset -8px -8px 16px 0px rgba(109, 157, 219, 0.1), 
+              inset 0px 11px 28px 0px rgba(167, 167, 167, 0.1);
+}
+
+#work2 .ex {
+  background: linear-gradient(to right top, rgba(165, 216, 130, .8), rgb(165, 216, 130, .55));
+}
+
+#work2 .ex > * {
+  color: #fff;
 }
 
 #contact {
