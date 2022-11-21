@@ -332,7 +332,7 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background: none;
-  box-shadow: 0 0 34px 0px rgba(58, 71, 88, 0.5), 
+  box-shadow: 0 0 17px 0px rgba(58, 71, 88, 0.5), 
               inset -8px -8px 16px 0px rgba(109, 157, 219, 0.1), 
               inset 0px 11px 28px 0px rgba(167, 167, 167, 0.1);
 }
@@ -383,7 +383,7 @@ body {
 
 #contact:before {
   content: '';
-  background: linear-gradient(to top, #000, rgb(0, 0, 0, .7)) fixed;
+  background: linear-gradient(to top, #000, rgb(0, 0, 0, .6)) fixed;
   height: 100%;
   width: 100%;
   position: absolute;
