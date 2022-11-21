@@ -458,18 +458,32 @@ body {
 #home .homecircle {
   width: 1440px; 
   position: absolute;
-  top: 30%;
-  left: 10%;
+  top: -15%;
+  left: -20%;
   transition: 1s; 
   opacity: 0.5;
   /* outline: 1px solid black; */
   transition: 1s;
-  /* animation: ro 10s linear infinite; */
+  animation: sdsd 15s linear infinite;
 }
 
-@keyframes ro {
+@keyframes sdsd {
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  
+  25% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
   100% {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
+    opacity: 0;
   }
 }
 
