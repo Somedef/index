@@ -31,7 +31,7 @@ body {
 .inner {
   width: 1360px;
   margin: 0 auto;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
 /* reset */
@@ -161,6 +161,14 @@ body {
   left: 40%;
   animation: spin 40s linear infinite;
   transition: 1s;
+}
+
+#work2 .spin {
+  top: 10%;
+}
+
+#work2 .spin3 {
+  bottom: 15%;
 }
 
 @keyframes spin {
@@ -319,6 +327,7 @@ body {
 #work2 .left {
   text-align: left;
   padding: 30px 100px;
+  padding-bottom: 20px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -360,7 +369,7 @@ body {
 }
 
 #work2 .ex {
-  background: linear-gradient(to right top, rgba(165, 216, 130, .8), rgb(165, 216, 130, .55));
+  background: linear-gradient(to right top, rgba(165, 216, 130, 0.8), rgb(165, 216, 130, .55));
 }
 
 #work2 .ex > * {
@@ -402,4 +411,12 @@ body {
 .textbox p {
   font-size: 6rem;
   font-weight: 700;
+}
+
+#work2 .wiki p span {
+  margin-left: 20px;
+}
+
+#work2 .wiki p:nth-child(2)  {
+  margin-bottom: 10px;
 }
