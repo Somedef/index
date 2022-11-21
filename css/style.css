@@ -85,6 +85,10 @@ body {
   z-index: 1;
 }
 
+#home {
+  position: relative;
+}
+
 #home h2 {
   top: 55%;
   left: 67%;
@@ -200,7 +204,7 @@ body {
 
 .left {
   text-align: left;
-  padding: 40px 100px;
+  padding: 30px 100px;
   border-radius: 20px;
   backdrop-filter: hue-rotate(45deg);
   -webkit-backdrop-filter: hue-rotate(45deg);
@@ -278,7 +282,7 @@ body {
   /* outline: 1px solid black; */
   padding: 20px 50px;
   border-radius: 20px;
-  width: 90%;
+  width: 750px;
   -webkit-backdrop-filter: hue-rotate(10deg);
   backdrop-filter: hue-rotate(10deg);
   background: linear-gradient(to left top, rgb(30, 144, 255, .7), rgb(30, 144, 255, .5));
@@ -294,11 +298,37 @@ body {
   align-items: flex-end;
 }
 
-.right img {
-  width: 90%;
+.screen {
+  width: 750px;
   margin-top: 40px;
   border-radius: 20px;
   box-shadow: 2px 2px 6px rgb(0, 0, 0, .2);
+  height: 410px;
+  background: url(../img/main3.JPG);
+  transition: background-position 10s ease;
+  background-position: 0 0;
+  background-size: 100% auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#work2 .screen {
+  width: 750px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px rgb(0, 0, 0, .2);
+  height: 410px;
+  background: url(../img/대한항공2.JPG);
+  transition: background-position 10s ease;
+  background-position: 0 0;
+  background-size: 100% auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.screen:hover,
+#work2 .screen:hover {
+  background-position: 0 100%;
 }
 
 .link {
@@ -307,7 +337,7 @@ body {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  width: 90%;
+  width: 750px;
   height: 83px;
   margin: 40px 0 0 0;
   border-radius: 20px;
@@ -326,8 +356,8 @@ body {
 
 #work2 .left {
   text-align: left;
-  padding: 30px 100px;
-  padding-bottom: 20px;
+  padding: 58px 100px;
+  /* padding-bottom: 20px; */
   border-radius: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -419,4 +449,30 @@ body {
 
 #work2 .wiki p:nth-child(2)  {
   margin-bottom: 10px;
+}
+
+#contact h3 {
+  margin-top: 50px;
+}
+
+#home .homecircle {
+  width: 1440px; 
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transition: 1s; 
+  opacity: 0.5;
+  /* outline: 1px solid black; */
+  transition: 1s;
+  /* animation: ro 10s linear infinite; */
+}
+
+@keyframes ro {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#contact h3 {
+  font-size: 5rem;
 }
