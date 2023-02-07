@@ -331,7 +331,7 @@ body {
   font-weight: 700;
   width: 750px;
   height: 83px;
-  margin: 40px 0 0 0;
+  margin: 30px 0 0 0;
   border-radius: 20px;
   -webkit-backdrop-filter: hue-rotate(45deg);
   backdrop-filter: hue-rotate(45deg);
@@ -344,6 +344,11 @@ body {
 .link>a {
   color: #fff;
   margin: 0 30px;
+  transition: 0.2s;
+}
+
+.link>a:hover {
+  color:dodgerblue;
 }
 
 #work2 .left {
@@ -366,6 +371,10 @@ body {
 
 #work2 .link {
   background: linear-gradient(to left top, rgb(30, 144, 255, .7), rgb(30, 144, 255, .5));
+}
+
+#work2 .link>a:hover {
+  color:rgb(0, 0, 0, .65);
 }
 
 
