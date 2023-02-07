@@ -343,7 +343,7 @@ body {
 
 .link>a {
   color: #fff;
-  margin: 0 50px;
+  margin: 0 30px;
 }
 
 #work2 .left {
@@ -417,7 +417,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  top: 20%;
+  top: 13%;
   text-shadow: 0 0 30px  rgba(145, 192, 255, 0.3);
 }
 
