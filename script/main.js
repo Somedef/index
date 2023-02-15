@@ -1,8 +1,8 @@
 var menu = ['HOME', 'PROJECT 01', 'PROJECT 02', 'CONTACT'];
 var swiper = new Swiper(".mySwiper", {
-    direction: "horizontal",
+    direction: "vertical",
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 60,
     mousewheel: true,
     pagination: {
         el: ".swiper-pagination",

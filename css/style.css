@@ -44,7 +44,7 @@ body {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   /* Center slide text horizontal */
   display: -webkit-box;
   display: -webkit-flex;
@@ -313,7 +313,7 @@ body {
 }
 
 #work2 .screen {
-  background: url(../img/대한항공2.JPG);
+  background: url(../img/요헤미티.png);
   background-position: 0 0;
   background-size: 100% auto;
 }
@@ -383,11 +383,19 @@ body {
 }
 
 #work2 .c01 {
-  background: rgb(0,37,108);
+  background: #ff5000;
+}
+
+#work2 .c02 {
+  background: #F4F2F0;
 }
 
 #work2 .c03 {
-  background: #f3f4f8;
+  background: #1E90FF;
+}
+
+#work2 .c04 {
+  background: #73D3B1;
 }
 
 #work2 .ex,
@@ -418,6 +426,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+  height: 1080px;
 }
 
 .textbox {
