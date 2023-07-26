@@ -11,3 +11,30 @@
   background-repeat: no-repeat;
   word-break: keep-all;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.modal {
+  outline: 1px solid black;
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+  display: none;
+  overflow: scroll;
+  padding: 30px;
+}
+
+.modal img {
+  width: 100%;
+}
