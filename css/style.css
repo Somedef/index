@@ -24,6 +24,7 @@ main {
   width: 1280px;
   margin: 0 auto;
   padding: 100px 0;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 h1 {
@@ -82,4 +83,17 @@ h3 {
   font-weight: 600;
   font-size: 14px;
   margin-top: 5px;
+}
+
+
+
+footer {
+  padding: 50px 0;
+}
+
+footer h3 {
+  font-size: 45px;
+  color: #c2c2c2;
+  text-align: center;
+  margin-top: 0;
 }
