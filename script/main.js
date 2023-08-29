@@ -1,7 +1,9 @@
-$("button").click(function () {
-  $(".modal").fadeIn(400);
-});
-
-$(".modal").click(function () {
-  $(".modal").fadeOut(400);
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  rewind: true,
+  spaceBetween: 26,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
