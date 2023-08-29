@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   padding: 0;
@@ -16,25 +16,70 @@
   display: none;
 }
 
-html {
-  font-size: 62.5%;
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+main {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 h1 {
-  text-align: center;
-  font-size: 5rem;
+  font-size: 60px;
+  color: rgb(63, 63, 63);
 }
 
-.modal {
-  outline: 1px solid black;
-  width: 80%;
-  height: 800px;
-  margin: 0 auto;
-  display: none;
-  overflow: scroll;
-  padding: 30px;
+h2 {
+  margin-top: 150px;
 }
 
-.modal img {
+h3 {
+  margin-top: 40px;
+  color: #707070;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.link {
+  flex-basis: 300px;
+  border-radius: 10px;
+  transition: .2s;
+}
+
+.link:hover {
+  background-color: #f0f0f0;
+}
+
+.link a {
+  display: flex;
+  align-items: baseline;
+  color: #000;
   width: 100%;
+  border: 1px solid #ebebeb;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.link a img {
+  width: 16px;
+  height: 16px;
+}
+
+.txt {
+  margin-left: 10px;
+}
+
+.txt>div {
+  color: #707070;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 5px;
 }
