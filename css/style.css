@@ -51,11 +51,11 @@ h3 {
 
 .link {
   width: 300px;
+  height: auto;
   border-radius: 10px;
-  transition: .2s;
 }
 
-.link:hover {
+.link a:hover {
   background-color: #f0f0f0;
 }
 
@@ -67,6 +67,7 @@ h3 {
   border: 1px solid #ebebeb;
   padding: 15px;
   border-radius: 10px;
+  transition: .2s;
 }
 
 .link a img {
